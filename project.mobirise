@@ -2,16 +2,22 @@
   "settings": {
     "currentPage": "index.html",
     "versionFirst": "2.9.10",
-    "versionPublish": "2.9.10",
+    "versionPublish": "3.10",
     "name": "SHANMUKHI.COM",
     "theme": {
       "name": "default",
-      "title": "Mobirise"
+      "title": "Mobirise",
+      "styling": {}
     },
     "publishType": "local",
-    "publishPath": "file:///Users/snandiraju/shanu",
-    "path": "file:///Users/snandiraju/Library/Application%20Support/Mobirise.com/Mobirise/projects/project-2016-03-27_111628",
-    "screenshot": "screenshot.png"
+    "publishPath": "file:///Users/snandiraju/WEB_SITES/shanu",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/nsri-128x128-99.png",
+    "noImageResize": "",
+    "google-analytics": "",
+    "cookiesAlert": "",
+    "uniqCompNum": 0
   },
   "pages": {
     "index.html": {
@@ -52,65 +58,11 @@
           "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger animated fadeInUp delay\" href=\"https://mobirise.com\">DOWNLOAD NOW</a> <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay\" href=\"https://mobirise.com\">LEARN MORE</a>"
         },
         {
-          "_styles": {
-            ".mbr-header__text": {
-              "color": "#ffffff"
-            },
-            ".mbr-header__subtext": {
-              "color": "#ffffff"
-            },
-            ".mbr-article": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "msg-box5",
-          "_anchor": "msg-box5-2",
-          "_params": {
-            "bgVideoRadio": true,
-            "bgVideo": {
-              "url": "https://www.youtube.com/embed/Ul880rvZJzo?rel=0&autoplay=0&loop=0",
-              "width": 1280,
-              "height": 720
-            },
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "images/bg3.jpg",
-            "bgColor": "#3c3c3c",
-            "bgColorRadio": false,
-            "overlay": true,
-            "overlayOpacity": "1",
-            "overlayColor": "#2c82c9",
-            "inverse": false,
-            "showTitle": true,
-            "showMeta": true,
-            "showText": false,
-            "showButtons": false
-          },
-          "media": {
-            "image": {
-              "class": "mbr-figure__img",
-              "width": 1400,
-              "src": "images/iphone.png"
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/watch?v=Ul880rvZJzo&feature=youtu.be",
-              "class": "mbr-figure__img",
-              "aspectratio": "16:9",
-              "autoplay": false,
-              "loop": false
-            }
-          },
-          "headerAlign": "left",
-          "title": "Shanmukhi Nandiraju",
-          "meta": "www.shanmukhi.com",
-          "text": "<p>Online video and Youtube particularly is now more popular than cable television. Mobirise provides a support for YouTube and Vimeo that allow you to liven up your sites.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
-        },
-        {
           "_name": "social-buttons1",
           "_anchor": "social-buttons1-3",
           "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
             "bgImageRadio": false,
             "parallax": true,
             "bgImage": "images/bg3.jpg",
@@ -154,51 +106,6 @@
           "title": "MOBIRISE WEBSITE BUILDER",
           "text": "Create awesome mobile-friendly websites. No coding and free.",
           "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger animated fadeInUp delay\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay\" href=\"https://mobirise.com\">FOR MAC</a>"
-        },
-        {
-          "_name": "contacts3",
-          "_anchor": "contacts3-5",
-          "_params": {
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "images/bg3.jpg",
-            "bgColor": "#000000",
-            "bgColorRadio": true,
-            "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#3C3C3C"
-          },
-          "text1": "<br><br><br>",
-          "text2": "<p class=\"mbr-contacts__text\"><strong>LINKS</strong></p><ul class=\"mbr-contacts__list\"><li><a href=\"http://www.nandiraju.com\">Site</a><a class=\"mbr-contacts__link text-gray\" href=\"https://mobirise.com/\"></a></li><li><br></li></ul>",
-          "form": {
-            "title": "MESSAGE",
-            "action": "srikanth@nandiraju.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
-            },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": false,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": false,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
-            }
-          },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"mbr-buttons__btn btn btn-danger\">CONTACT US</a>"
         }
       ]
     }
