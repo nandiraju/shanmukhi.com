@@ -67,6 +67,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   color-scheme: dark;
+  overflow-x: clip;
 }
 
 .scroll-top-target {
@@ -1005,7 +1006,7 @@ img {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -1119,7 +1120,7 @@ img {
    ========================================================================== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -1555,6 +1556,13 @@ dialog::backdrop {
     max-width: 360px;
   }
 
+  /* Hide chips — negative offsets overflow when layout is single-column */
+  .chip-top-left,
+  .chip-bottom-right,
+  .chip-bottom-left {
+    display: none;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1612,11 +1620,6 @@ dialog::backdrop {
 
   .contact-card-wrap {
     padding: 2.5rem 1.5rem;
-  }
-
-  .chip-top-left,
-  .chip-bottom-right {
-    display: none;
   }
 
   .timeline {
