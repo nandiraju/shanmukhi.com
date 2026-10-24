@@ -21,6 +21,9 @@
   <meta property="og:title" content="Shanu Nandiraju | Computer Science &amp; AI Systems | UC San Diego">
   <meta property="og:description" content="Hi! I’m a Computer Science student at UC San Diego, passionate about developing software that makes a real-world impact. Full-stack development, cloud infrastructure, and AI integration.">
   <meta property="og:image" content="https://shanmukhi.com/assets/images/shanu-github-avatar.png">
+  <meta property="og:image:width" content="460">
+  <meta property="og:image:height" content="460">
+  <meta property="og:image:alt" content="Shanu Nandiraju headshot portrait">
   <meta property="og:site_name" content="Shanu Nandiraju Portfolio">
   <meta property="og:locale" content="en_US">
 
@@ -36,6 +39,9 @@
   <link rel="icon" type="image/png" sizes="128x128" href="assets/images/nsri-128x128-99.png">
   <link rel="apple-touch-icon" href="assets/images/shanu-github-avatar.png">
   <link rel="manifest" href="site.webmanifest">
+
+  <!-- LCP Image Preload — must be before font fetches to win critical-path race -->
+  <link rel="preload" as="image" href="assets/images/shanu-github-avatar.png" fetchpriority="high">
 
   <!-- Typography: Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,9 +59,15 @@
     "name": "Shanmukhi Sai Nandiraju",
     "alternateName": ["Shanu Nandiraju", "Shanmukhi Nandiraju"],
     "url": "https://shanmukhi.com",
-    "image": "https://shanmukhi.com/assets/images/shanu-github-avatar.png",
+    "dateModified": "2026-10-24",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://shanmukhi.com/assets/images/shanu-github-avatar.png",
+      "width": 460,
+      "height": 460
+    },
     "jobTitle": "Software Engineer & AI Systems Developer",
-    "email": "mailto:contact@shanmukhi.com",
+    "email": "contact@shanmukhi.com",
     "gender": "Female",
     "affiliation": {
       "@type": "CollegeOrUniversity",
@@ -264,6 +276,7 @@
                   <img src="assets/images/shanu-github-avatar.png"
                        alt="Shanu (Shanmukhi Sai) Nandiraju headshot portrait"
                        fetchpriority="high"
+                       decoding="async"
                        width="460"
                        height="460">
                 </div>

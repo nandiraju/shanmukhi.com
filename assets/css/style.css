@@ -112,6 +112,7 @@ body {
   filter: blur(100px);
   opacity: 0.35;
   animation: floatOrb 22s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .ambient-orb-1 {
@@ -246,6 +247,7 @@ img {
 .brand-text {
   background: var(--gradient-text);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -414,6 +416,7 @@ img {
   margin-bottom: 1rem;
   background: var(--gradient-text);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -495,6 +498,7 @@ img {
 .text-gradient {
   background: var(--gradient-brand);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -718,6 +722,7 @@ img {
   letter-spacing: -0.03em;
   background: var(--gradient-brand);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
   margin-bottom: 0.35rem;

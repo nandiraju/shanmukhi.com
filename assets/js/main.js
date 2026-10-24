@@ -185,12 +185,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia('(pointer: fine)').matches) {
     const cards = document.querySelectorAll('.project-card, .experience-card, .pillar-card, .skill-category-card');
     cards.forEach(card => {
+      let rafId = null;
+      let pendingX = 0, pendingY = 0;
       card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
+        pendingX = e.clientX;
+        pendingY = e.clientY;
+        if (rafId) return;
+        rafId = requestAnimationFrame(() => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty('--mouse-x', `${pendingX - rect.left}px`);
+          card.style.setProperty('--mouse-y', `${pendingY - rect.top}px`);
+          rafId = null;
+        });
       });
     });
   }
