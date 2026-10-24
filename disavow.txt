@@ -1,0 +1,3 @@
+# Disavow file for shanmukhi.com
+# Spammy backlink from previous domain owner
+domain:prolinkseo.pro
