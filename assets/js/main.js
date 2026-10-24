@@ -232,4 +232,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
 
   statNumbers.forEach(s => statsObserver.observe(s));
+
+  // 11. Smooth Scroll to Top for all #top anchors
+  document.querySelectorAll('a[href="#top"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+      if (window.location.hash) {
+        history.pushState(null, '', window.location.pathname);
+      }
+    });
+  });
 });
